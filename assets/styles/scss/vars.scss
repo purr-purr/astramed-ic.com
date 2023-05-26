@@ -1,6 +1,7 @@
 // Breackpoints
 $low-mobile-bp: 375px;
 $mobile-bp: 992px;
+$tablet-bp: 1300px;
 
 :root {
   --primary-text: #3F3F3F;
@@ -18,31 +19,46 @@ $mobile-bp: 992px;
   --px14: 14px;
   --px16: 16px;
   --px18: 18px;
+  --px20: 20px;
   --px25: 25px;
   --px40: 40px;
   --px45: 45px;
   --px50: 50px;
+
+  @media (max-width: $mobile-bp) {
+    --px16: 14px;
+    --px18: 16px;
+    --px20: 14px;
+    --px25: 20px;
+    --px40: 25px;
+    --px45: 25px;
+    --px50: 30px;
+  }
 }
 
-.a2 {
+.font-size--a2 {
   --px12: 13px;
   --px14: 17px;
   --px16: 19px;
   --px18: 21px;
   --px25: 28px;
   --px40: 43px;
-  --px45: 48px;
-  --px50: 53px;
+  --px45: 45px;
 }
 
-.a3 {
+.font-size--a3 {
+  --px12: 14px;
+  --px14: 19px;
+  --px16: 21px;
+  --px18: 23px;
+  --px25: 30px;
 
+  --px40: 43px;
+  --px45: 45px;
 }
 
-.light-mode {
+.a3 {}
 
-}
+.light-mode {}
 
-.dark-mode {
-
-}
+.dark-mode {}

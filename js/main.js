@@ -1,27 +1,29 @@
+// Preloader
+window.onload = function () {
+	document.body.classList.add('loaded_hiding');
+	window.setTimeout(function () {
+			document.body.classList.add('loaded');
+			document.body.classList.remove('loaded_hiding');
+	}, 500);
+}
+
 // Import HTML template
 $(function () {
     // layout
-    $("#included__header").load("/modules/header/index.html");
-    $("#included__footer").load("/modules/footer/index.html");
+    $("#included__header").load("templates/header.html");
+    $("#included__footer").load("templates/footer.html");
     // any
-    $("#included__contact-block").load("/modules/contactBlock/index.html");
-    $("#included__preloader").load("/modules/preloader/index.html");
+    $("#included__contact-block").load("templates/contact-block.html");
+    $("#included__preloader").load("templates/preloader.html");
+    $("#included__impraired-mode").load("templates/impaired-mode.html");
 });
+
 // ---------------------------------------------------------------------------
 
-// Прелоадер
-window.onload = function () {
-    document.body.classList.add('loaded_hiding');
-    window.setTimeout(function () {
-        document.body.classList.add('loaded');
-        document.body.classList.remove('loaded_hiding');
-    }, 500);
-}
-
+// show full text on Home Page
 $(document).ready(function () {
     $('#home-desc__read-more-btn').on('click', function () {
         $('.home-desc__info--hide-text').css('display', 'block');
         $(this).hide();
     });
 });
-

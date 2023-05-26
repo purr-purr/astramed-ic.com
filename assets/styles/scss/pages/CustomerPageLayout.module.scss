@@ -1,0 +1,15 @@
+.customer-page {
+  padding: 110px 0;
+
+  @include media-mobile {
+    padding: 40px 0 0;
+  }
+
+  h2 {
+    margin-bottom: 30px;
+
+    @include media-mobile {
+      margin-bottom: 20px;
+    }
+  }
+}

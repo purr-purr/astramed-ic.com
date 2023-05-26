@@ -1,0 +1,29 @@
+.insurance-rules {
+  padding: 110px 0 0;
+
+  @include media-mobile {
+    padding-top: 40px;
+  }
+
+  & h2 {
+    margin-bottom: 35px;
+
+    @include media-mobile {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px 0 50px;
+
+    @include media-mobile {
+      margin-bottom: 0;
+
+      & li {
+        height: 280px;
+      }
+    }
+  }
+}

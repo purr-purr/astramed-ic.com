@@ -1,0 +1,17 @@
+.licenses-page {
+  padding: 100px 0;
+  max-width: 1080px;
+  width: 100%;
+
+  @include media-mobile {
+    padding: 40px 0 0;
+  }
+
+  & h2 {
+    margin-bottom: 30px;
+
+    @include media-mobile {
+      margin-bottom: 20px;
+    }
+  }
+}
