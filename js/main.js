@@ -15,7 +15,7 @@ $(function () {
     // any
     $("#included__contact-block").load("templates/contact-block.html");
     $("#included__preloader").load("templates/preloader.html");
-    $("#included__impraired-mode").load("templates/impaired-mode.html");
+    $("#included__impaired-mode").load("templates/impaired-mode.html");
 });
 
 // ---------------------------------------------------------------------------

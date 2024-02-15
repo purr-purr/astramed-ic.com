@@ -1385,8 +1385,8 @@ details > summary {
 .dark-thame .link-list__sub-title,
 .white-thame .link-list__sub-title {
   padding-left: 30px; }
-.dark-thame #included__impraired-mode,
-.white-thame #included__impraired-mode {
+.dark-thame #included__impaired-mode,
+.white-thame #included__impaired-mode {
   border-bottom: 1px solid var(--black-color); }
 
 .dark-thame {
